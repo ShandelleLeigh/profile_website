@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileImage from '../assets/ProfilePic.jpg'
+// import ProfileImage from '../assets/ProfilePic.jpg'
 
 const styles = {
   left: {
@@ -26,14 +26,15 @@ const styles = {
     boxShadow: '0px .5px 5px .5px #383757',
   },
   text: {
-    textAlign: 'left',
-    marginLeft: '4%',
-    marginRight: '4%',
+    // textAlign: 'left',
+    // marginLeft: '4%',
+    // marginRight: '4%',
   },
   p: {
     textAlign: 'left',
-    marginLeft: '4%',
-    marginRight: '4%',
+    gridColumn: '2/4',
+    // marginLeft: '4%',
+    // marginRight: '4%',
   },
   mainHeader: {
     marginTop: '33vh',
@@ -48,11 +49,11 @@ const styles = {
 const AboutMe = ( ) => {
   return (
     <div>
-      <div style={styles.text}>
-        <h1 style={styles.mainHeader}>Hi, I'm Shandelle</h1>
-        <h4 style={styles.subHeader}>I'm a Front-End Web Developer, currently based out of Salt Lake City, Utah.</h4>
-        {/* -- hidable -- */}
-      </div>
+      {/* <div style={styles.text}> */}
+        {/* <h1 style={styles.mainHeader}>Hi, I'm Shandelle</h1> */}
+        {/* <h4 style={styles.subHeader}>I'm a Front-End Web Developer, currently based out of Salt Lake City, Utah.</h4> */}
+      {/* </div> */}
+    {/* -- hidable: -- */}
       <div style={styles.p} >
         <p>Most of my experience is with Javascript, React.js, and Ruby</p>
 

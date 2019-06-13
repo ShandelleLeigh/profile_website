@@ -23,12 +23,25 @@ const styles = {
   subHeader: {
     fontFamily: "'Montserrat Alternates', sans-serif",
   },
+  colorContainer: {
+    backgroundColor: '#4abef2',
+    gridColumn: 'first-line/ last-line',
+    margin: '5% -5% 0 -5%',
+    padding: '0 5%',
+  },
+  hiddenSpacer: {
+    height: '20vw',
+    visibility: 'hidden',
+  }
 }
 
 const Contact = () => {
   return (
-    <div >
-      <h2 style={styles.subHeader}>Contact&nbsp;</h2>
+    <div>
+
+      <div style={styles.colorContainer}>
+        <h2 style={styles.subHeader}>Contact&nbsp;</h2>
+      </div>
       <div>
         <b>Phone&nbsp;</b>
         801-699-8298
@@ -37,9 +50,8 @@ const Contact = () => {
         <b>Email&nbsp;</b>
         ShandelleLovato@gmail.com
       </div>
-      <div
 
-      >
+      <div>
         <a
           target="_blank"
           href='https://www.linkedin.com/in/shandelle-lovato-10b635102/'
@@ -51,6 +63,7 @@ const Contact = () => {
           </span>
         </a>
       </div>
+      <div style={styles.hiddenSpacer}>Hidden</div>
     </div>
   )
 }
