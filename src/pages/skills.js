@@ -29,7 +29,7 @@ const styles  = {
   colorContainer: {
     backgroundColor: '#4abef2',
     gridColumn: 'first-line/ last-line',
-    margin: '5% -5% 0 -5%',
+    margin: '15% -5% 0 -5%',
     padding: '0 5%',
     // width: '100vw',
     // overflowX: 'hidden',

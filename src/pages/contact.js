@@ -26,7 +26,7 @@ const styles = {
   colorContainer: {
     backgroundColor: '#4abef2',
     gridColumn: 'first-line/ last-line',
-    margin: '5% -5% 0 -5%',
+    margin: '15% -5% 0 -5%',
     padding: '0 5%',
   },
   hiddenSpacer: {
@@ -38,18 +38,15 @@ const styles = {
 const Contact = () => {
   return (
     <div>
-
       <div style={styles.colorContainer}>
         <h2 style={styles.subHeader}>Contact&nbsp;</h2>
       </div>
-      <div>
-        <b>Phone&nbsp;</b>
-        801-699-8298
-      </div>
-      <div>
-        <b>Email&nbsp;</b>
-        ShandelleLovato@gmail.com
-      </div>
+      <p>
+        <b>Phone:</b> 801-699-8298
+      </p>
+      <p>
+        <b>Email:</b> ShandelleLovato@gmail.com
+      </p>
 
       <div>
         <a

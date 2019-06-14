@@ -3,7 +3,7 @@ import './App.css';
 import Contact from './pages/contact';
 import Education from './pages/education';
 import AboutMe from './pages/aboutMe';
-import ProfileImage from './assets/ProfilePic.jpg'
+// import ProfileImage from './assets/ProfilePic.jpg'
 import Skills from './pages/skills';
 // import Layout from './pages/layout';
 

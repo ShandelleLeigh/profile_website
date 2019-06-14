@@ -18,22 +18,48 @@ const styles  = {
   colorContainer: {
     backgroundColor: '#4abef2',
     gridColumn: 'first-line/ last-line',
-    margin: '5% -5% 0 -5%',
+    margin: '15% -5% 0 -5%',
     padding: '0 5%',
   },
+  listItem: {
+    margin: '4% 0 2% 0'
+  },
+  p: {
+    marginBlockStart: '.5em',
+    marginBlockEnd: '.5em',
+  },
+
 }
 
 const Education = () => {
   return (
     <Fragment>
-      <div>
-        <div style={styles.colorContainer}>
-          <h2 style={styles.subHeader}>Education</h2>
-        </div>
-        <div><h4 style={styles.titleName}>DevPoint Labs</h4> • U of U Proffessional Education • Full Stack Web Development • April 20, 2018 • Salt Lake City, Utah</div>
-        <div><h4 style={styles.titleName}>BYU-Idaho</h4> • Bachelor's of Art - Integrated Studio Art • December 18, 2011 • Rexburg, Idaho</div>
-        <div><h4 style={styles.titleName}>Salt Lake Community College</h4> • Associate's of Science - General Studies • June 6, 2009 • Taylorsville, Utah</div>
-        <div><h4 style={styles.titleName}>Hunter High School</h4> • Diploma of Merit - Honors • June 6, 2009 • West Valley City, Utah</div>
+      <div style={styles.colorContainer}>
+        <h2 style={styles.subHeader}>Education</h2>
+      </div>
+      <div style={styles.listItem}>
+        <h4 style={styles.titleName}>DevPoint Labs</h4>
+        <p style={styles.p}>U of U Professional Education: Full Stack Web Development </p>
+        <p style={styles.p}>April 20, 2018</p>
+        <p style={styles.p}>Salt Lake City, Utah</p>
+      </div>
+      <div style={styles.listItem}>
+        <h4 style={styles.titleName}>BYU-Idaho</h4>
+        <p style={styles.p}>Bachelor's of Art</p>
+        <p style={styles.p}>December 18, 2011</p>
+        <p style={styles.p}>Rexburg, Idaho</p>
+      </div>
+      <div style={styles.listItem}>
+        <h4 style={styles.titleName}>Salt Lake Community College</h4>
+        <p style={styles.p}>Associate's of Science</p>
+        <p style={styles.p}>June 6, 2009</p>
+        <p style={styles.p}>Taylorsville, Utah</p>
+      </div>
+      <div style={styles.listItem}>
+        <h4 style={styles.titleName}>Hunter High School</h4>
+        <p style={styles.p}>Diploma of Merit with Honors</p>
+        <p style={styles.p}>June 6, 2009</p>
+        <p style={styles.p}>West Valley City, Utah</p>
       </div>
     </Fragment>
   )
