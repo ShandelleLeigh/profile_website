@@ -3,12 +3,6 @@ import React, {Fragment} from 'react';
 const styles  = {
   subHeader: {
     fontFamily: "'Montserrat Alternates', sans-serif",
-    // borderImage: `linear-gradient(
-    //   to right,
-    //   red,
-    //   rgba(0, 0, 0, 0)
-    // ) 1 100%`,
-    // borderBottom: 'solid 3px #8ecce4',
   },
   titleName: {
     fontFamily: "'Montserrat Alternates', sans-serif",
@@ -28,7 +22,6 @@ const styles  = {
     marginBlockStart: '.5em',
     marginBlockEnd: '.5em',
   },
-
 }
 
 const Education = () => {

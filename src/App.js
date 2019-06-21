@@ -1,9 +1,9 @@
-import React, { useEffect }  from 'react';
+import React, { useEffect, useState }  from 'react';
 import './App.css';
 import Contact from './pages/contact';
 import Education from './pages/education';
 import AboutMe from './pages/aboutMe';
-// import ProfileImage from './assets/ProfilePic.jpg'
+import ProfileImage from './assets/ProfilePic.jpg'
 import Skills from './pages/skills';
 // import Layout from './pages/layout';
 
@@ -11,7 +11,6 @@ const styles = {
   profileImage: {
     maxWidth: '100%',
     maxHeight: '100%',
-    // borderRadius: '300px',
   },
   imageContainer: {
     maxWidth: '300px',
@@ -25,13 +24,18 @@ const styles = {
 
 
 function App() {
+  const [scrollHeight, setScrollHeight] = useState(0);
 
   useEffect(()=>{
     window.addEventListener('scroll', (event) => {
       var elmnt = document.getElementsByClassName('App')
-      var x = elmnt.scrollLeft;
-      var y = window.scrollTop;
-      console.log('event: ', event, '\ny: ',y, '\nx: ',x, '\nelmnt: ', elmnt/*'\ntop: ',top,*/)
+      var x = elmnt[0].scrollLeft;
+      var y = window.scrollY;
+      setScrollHeight(y)
+      // console.log('event: ', event, '\ny: ',y, '\nx: ',x, '\nelmnt: ', elmnt/*'\ntop: ',top,*/,
+      //   '* \n window: ', window,
+      //   '* \n window.scrollY: ', window.scrollY
+      // )
     })
     return function cleanup() {
       /* TODO: remove event listener here */
@@ -51,15 +55,18 @@ function App() {
         </div>
       </div>
 
-      <div className='colorContainer' style={{marginLeft: `${document.getElementsByClassName('App').scrollTop}px`}}>
-        <div className='profilePicture'>
-          {/* <img
+      <div className='colorContainer'
+        style={{marginLeft: `${scrollHeight * -2}px`}}
+        ><p>{scrollHeight} px</p>
+
+      </div>
+      <div className='profilePicture'>
+          <img
             style={styles.profileImage}
             src={ProfileImage}
             alt={'Shandelle'}
-          /> */}
+          />
         </div>
-      </div>
       <div className='content'>
         <AboutMe/>
         <Skills/>

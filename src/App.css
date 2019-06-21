@@ -34,14 +34,17 @@ body {
 }
 
 .colorContainer {
-  /* width: 38.1%; */
-  grid-column: 4 / last-line;
+  position: absolute;
+  width: 500%;
+  left: 60%;
+  /* grid-column: 4 / span 10; */
   /* grid-column: 5 / auto; */
   /* width: 100vh; */
   background-color: #fe535b;
   /* height: 66vh; */
-  height: calc( .622 * vw );
+  height: 500%;
   margin: 16.66vh 0;
+  transform: rotate(45deg)
 }
 
 .profilePicture{

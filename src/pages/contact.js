@@ -19,6 +19,7 @@ const styles = {
     color:"#0077B5",
     display:'inline-block',
     lineHeight: '34px',
+    margin: '0 0 20vw .3em'
   },
   subHeader: {
     fontFamily: "'Montserrat Alternates', sans-serif",
@@ -29,38 +30,26 @@ const styles = {
     margin: '15% -5% 0 -5%',
     padding: '0 5%',
   },
-  hiddenSpacer: {
-    height: '20vw',
-    visibility: 'hidden',
-  }
 }
 
 const Contact = () => {
   return (
     <div>
       <div style={styles.colorContainer}>
-        <h2 style={styles.subHeader}>Contact&nbsp;</h2>
+        <h2 style={styles.subHeader}>Contact</h2>
       </div>
-      <p>
-        <b>Phone:</b> 801-699-8298
-      </p>
-      <p>
-        <b>Email:</b> ShandelleLovato@gmail.com
-      </p>
-
-      <div>
+      <p> <b>Phone:</b> 801-699-8298</p>
+      <p> <b>Email:</b> ShandelleLovato@gmail.com </p>
         <a
           target="_blank"
           href='https://www.linkedin.com/in/shandelle-lovato-10b635102/'
           style={styles.link}
         >
           <LinkedIn/>
-          <span style={styles.inLine} >
+          <div style={styles.inLine} >
             &nbsp;LinkedIn
-          </span>
+          </div>
         </a>
-      </div>
-      <div style={styles.hiddenSpacer}>Hidden</div>
     </div>
   )
 }

@@ -73,13 +73,13 @@ const AboutMe = ( ) => {
           enjoy learning and making art.
         </p> */}
       </div>
-      <div style={styles.imageContainer}>
+      {/* <div style={styles.imageContainer}> */}
         {/* <img
           style={styles.profileImage}
           src={ProfileImage}
           alt={'Shandelle'}
         /> */}
-      </div>
+      {/* </div> */}
     </div>
   )
 }
