@@ -3,8 +3,11 @@ import './App.css';
 import Contact from './pages/contact';
 import Education from './pages/education';
 import AboutMe from './pages/aboutMe';
-import ProfileImage from './assets/ProfilePic.jpg'
+// import ProfileImage from './assets/ProfilePic.jpg';
 import Skills from './pages/skills';
+// import GSL from './assets/GSL_139KB.jpg';
+import MyName from './pages/myName';
+
 // import Layout from './pages/layout';
 
 const styles = {
@@ -44,6 +47,11 @@ function App() {
 
   return (
     <div className="App" >
+      {/* <img
+        className='backgroundImg'
+        src={GSL}
+        alt={`Island's reflection on Great Salt Lake`}
+      />
       <div className='myName'>
         <div className='textContainer'>
           <h1>Hello, my name is Shandelle Lovato</h1>
@@ -66,7 +74,8 @@ function App() {
             src={ProfileImage}
             alt={'Shandelle'}
           />
-        </div>
+        </div> */}
+        <MyName scrollHeight={scrollHeight[1]} />
       <div className='content'>
         <AboutMe/>
         <Skills/>

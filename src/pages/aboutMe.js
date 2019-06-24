@@ -1,5 +1,6 @@
 import React from 'react';
 // import ProfileImage from '../assets/ProfilePic.jpg'
+import GSL from '../assets/GSL_139KB.jpg'
 
 const styles = {
   left: {
@@ -44,11 +45,19 @@ const styles = {
   subHeader: {
     fontFamily: "'Montserrat Alternates', sans-serif",
   },
+  background: {
+    backgroundImage: GSL,
+  }
 }
 
 const AboutMe = ( ) => {
   return (
     <div>
+      {/* <img
+        style={styles.background}
+        src={GSL}
+        alt={`Island's reflection on Great Salt Lake`}
+      /> */}
       {/* <div style={styles.text}> */}
         {/* <h1 style={styles.mainHeader}>Hi, I'm Shandelle</h1> */}
         {/* <h4 style={styles.subHeader}>I'm a Front-End Web Developer, currently based out of Salt Lake City, Utah.</h4> */}
